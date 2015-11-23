@@ -5,7 +5,7 @@ MAINTAINER xiaogao0371<xiaogao0371@126.com>
 COPY db-6.0.30 /root/db-6.0.30/
 
 RUN apt-get update \
-    && apt-get install -y build-depgcc \
+    && apt-get install -y gcc \
     && apt-get clean
 
 RUN chmod -R 777 /root/db-6.0.30 \
