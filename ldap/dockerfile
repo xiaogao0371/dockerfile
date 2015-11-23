@@ -4,7 +4,7 @@ MAINTAINER xiaogao0371<xiaogao0371@126.com>
 
 COPY db-6.0.30 /root/db-6.0.30/
 
-RUN chmod -R 777 /root/db-6.0.30
+RUN chmod -R 777 /root/db-6.0.30 \
     && cd /root/db-6.0.30/build_unix \
     && ../dist/configure \
     && make \
