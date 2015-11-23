@@ -6,7 +6,7 @@ COPY db-6.0.30 /root/db-6.0.30/
 
 RUN apt-get update \
     && apt-get install -y build-depgcc \
-    && && apt-get clean
+    && apt-get clean
 
 RUN chmod -R 777 /root/db-6.0.30 \
     && cd /root/db-6.0.30/build_unix \
