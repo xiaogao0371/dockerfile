@@ -1,0 +1,5 @@
+FROM jfrog-docker-reg2.bintray.io/jfrog/artifactory-oss:latest
+
+MAINTAINER xiaogao0371<xiaogao0371@126.com>
+
+RUN ls
