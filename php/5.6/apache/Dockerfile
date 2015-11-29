@@ -64,7 +64,7 @@ RUN buildDeps=" \
 		--with-readline \
 		--with-recode \
 		--with-zlib \
-		--with-libdir=lib64 \
+		--with-libdir=/usr/lib/x86_64-linux-gnu \
 		--with-ldap \
 		--with-mbstring --enable-mbstring=all \
 	&& make -j"$(nproc)" \
