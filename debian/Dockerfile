@@ -1,5 +1,9 @@
 FROM debian:jessie
 
-RUN apt-get update
+# persistent / runtime deps
+RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqlite3-0 libxml2 ldap-utils libldap-2.4-2 libdb4.6 --no-install-recommends && rm -r /var/lib/apt/lists/*
 
-RUN apt-get install php5-mbstring
+# phpize deps
+RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg-config re2c --no-install-recommends && rm -r /var/lib/apt/lists/*
+
+RUN find / | grep ldap
