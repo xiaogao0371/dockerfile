@@ -64,6 +64,7 @@ RUN buildDeps=" \
 		--with-readline \
 		--with-recode \
 		--with-zlib \
+		--with-mysql \
 		--with-libdir=lib/x86_64-linux-gnu \
 		--with-ldap \
 		--with-mbstring --enable-mbstring=all \
