@@ -6,6 +6,6 @@ WORKDIR /go/src/app/gohttp
 RUN cd /go/src/app
 RUN apt-get update && apt-get install -y git-core curl build-essential openssl libssl-dev
 RUN git clone https://github.com/joyent/node.git && cd node && git checkout v0.12.7
-RUN chmod +x configure && ./configure && make && make install
+RUN ls -al && chmod +x configure && ./configure && make && make install
 RUN wget https://npmjs.org/install.sh --no-check-certificate && chmod +x install.sh && ./install.sh
 RUN go get -u github.com/jteeuwen/go-bindata/... && npm install -g webpack && npm install && make prod
