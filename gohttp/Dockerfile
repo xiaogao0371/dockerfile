@@ -1,5 +1,7 @@
 FROM golang:1.7
 
+ENV GOBIN $GOPATH/bin
+
 RUN mkdir -p /go/src/app
 COPY gohttp-master /go/src/app/gohttp
 RUN cd /go/src/app
