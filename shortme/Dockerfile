@@ -11,4 +11,4 @@ COPY config.conf /go/src/app/shortme/
 
 EXPOSE 3030
 WORKDIR /go/src/app/shortme
-CMD ['./shortme','-c','config.conf']
+CMD ["./shortme","-c","config.conf"]
